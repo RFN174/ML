@@ -12,8 +12,9 @@ class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
 #the neural network
 model = keras.Sequential([
     keras.layers.Flatten(input_shape=(28, 28)),
-    tf.keras.layers.Dense(100),
-    tf.keras.layers.Dense(100),
+    tf.keras.layers.Dense(100 activation='relu'),
+    tf.keras.layers.Dense(100 activation='relu'),
+    keras.layers.Dense(100)
     keras.layers.Dense(10)
 ])
 #the compiler
